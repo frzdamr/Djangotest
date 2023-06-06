@@ -1,0 +1,48 @@
+
+body{
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background:  #E5BEEC;
+          background-position: 50px;
+          text-align: center;
+}
+
+.str {
+          width: 210px;
+          height: 230px;
+          display: flex;  
+          justify-content: center;
+          padding: 2rem;
+          cursor: pointer;
+          background-color: #917FB3;
+          border-radius: 5%;
+          box-shadow:2px 2px 30px -1px #2A2F4F;
+}
+form .name {
+         color: #1b1e33;
+         font-size:18px;
+         font-family: Arial, Helvetica, sans-serif;
+
+}
+form p {
+         margin-bottom: 15px;
+}
+
+.btn{     
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          height: 2rem;
+
+          margin-top: 40px;
+          background: #424766;
+          justify-content: center;
+          display: block;
+          color: #E5BEEC;
+          font-size: 1em;
+          border-radius: 20px;
+          font-weight: bold;  
+}
+

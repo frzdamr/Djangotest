@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<style>
+  
+body{
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background:  #81c8e2;
+          background-position: 50px;
+          text-align: center;
+}
+
+.str {
+          width: 210px;
+          height: 230px;
+          display: flex;  
+          justify-content: center;
+          padding: 2rem;
+          cursor: pointer;
+          background-color: #0A2463;
+          border-radius: 5%;
+          box-shadow:2px 2px 30px -1px #0A2463;
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: aqua;
+}
+form .name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+form .date {
+  margin-top: 5px;
+}
+.btn {
+  margin-block-start: 50px;
+  background-color: #0A2463;
+  border-color: aqua;
+  color: aqua;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: aqua
+  2px 2px 10px -3px;
+  
+}
+
+</style>
+<body>
+
+    <div class="str" >
+     <form>
+      <p class="name"> {{mymember.firstname}} {{mymember.lastname}} </p>
+      <p class="phone" > phone : {{mymember.phone}}</p>
+      <p class="date">date of birth: {{mymember.birthdate}}</p>
+      <p class="back"> <button  class="btn" type="button" onclick="back()">back to members</button></p>
+     </form> 
+    </div> 
+  <script>
+    function back() {
+      location.href = "/members"
+    }
+  </script>
+</body>
+</html>
